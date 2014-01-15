@@ -1,30 +1,23 @@
 
 require.config({
-  shim: {
-    underscore: {
-      exports: '_'
-    },
-    backbone: {
-      deps: [
-        'underscore',
-        'jquery'
-      ],
-      exports: 'Backbone'
-    }
-  },
-
   paths: {
-    jquery: '../bower_components/jquery/jquery',
-    backbone: '../bower_components/backbone/backbone',
-    underscore: '../bower_components/underscore/underscore',
-    text: '../bower_components/requirejs-text/text',
-    templates: '../templates'
+    jquery: '../bower_components/jquery/jquery'
   }
 });
 
 require([
-  ''
-], function() {
+  'jquery', 
+  'NormalClick'
+], function($, NormalClick) {
   
+  $('.click').each(function(index, element) {
+    var $click = $(element),
+        $toggle = $click.siblings('.toggle');
+
+    $click.click(function() {
+      $toggle.toggleClass('gone');
+    })
+  });
+
 });
 
