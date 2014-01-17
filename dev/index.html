@@ -23,33 +23,94 @@
 
 </head>
 <body>
+  <ul id="log"></ul>
 
-  <h1 class="title">Div</h1>
+
+  <h1>Fast</h1>
+  <h2 class="title">Div</h2>
   <div class="container">
-    <div class="click"></div>
+    <div class="fast click"></div>
     <div class="toggle"></div>
   </div>
   <div class="container">
-    <div class="click"></div>
+    <div class="fast click"></div>
     <div class="toggle"></div>
   </div>
   <div class="container">
-    <div class="click"></div>
+    <div class="fast click"></div>
     <div class="toggle"></div>
   </div>
 
+  <h2 class="title">Anchor</h2>
+  <div class="container">
+    <a href="#" class="fast click"></a>
+    <div class="toggle"></div>
+  </div>
+  <div class="container">
+    <a href="#" class="fast click"></a>
+    <div class="toggle"></div>
+  </div>
+  <div class="container">
+    <a href="#" class="fast click"></a>
+    <div class="toggle"></div>
+  </div>
+
+  <h2 class="title">Images</h2>
+  <div class="container">
+    <img class="fast click" src="http://www.online-image-editor.com/styles/2013/images/example_image.png" alt="">
+    <div class="toggle"></div>
+  </div>
+  <div class="container">
+    <img class="fast click" src="http://www.online-image-editor.com/styles/2013/images/example_image.png" alt="">
+    <div class="toggle"></div>
+  </div>
+  <div class="container">
+    <img class="fast click" src="http://www.online-image-editor.com/styles/2013/images/example_image.png" alt="">
+    <div class="toggle"></div>
+  </div>
   
-  <h1 class="title">A</h1>
+  <h2 class="title">Image in anchor</h2>
   <div class="container">
-    <a href="#" class="click"></a>
+    <a href="javascript:void(0)" class="fast click"><img src="http://www.online-image-editor.com/styles/2013/images/example_image.png" alt=""></a>
     <div class="toggle"></div>
   </div>
   <div class="container">
-    <a href="#" class="click"></a>
+    <a href="javascript:void(0)" class="fast click"><img src="http://www.online-image-editor.com/styles/2013/images/example_image.png" alt=""></a>
     <div class="toggle"></div>
   </div>
   <div class="container">
-    <a href="#" class="click"></a>
+    <a href="javascript:void(0)" class="fast click"><img src="http://www.online-image-editor.com/styles/2013/images/example_image.png" alt=""></a>
+    <div class="toggle"></div>
+  </div>
+
+
+
+  <h1>Slow</h1>
+  <h2 class="title">Div</h2>
+  <div class="container">
+    <div class="slow click"></div>
+    <div class="toggle"></div>
+  </div>
+  <div class="container">
+    <div class="slow click"></div>
+    <div class="toggle"></div>
+  </div>
+  <div class="container">
+    <div class="slow click"></div>
+    <div class="toggle"></div>
+  </div>
+
+  <h2 class="title">A</h2>
+  <div class="container">
+    <a href="#" class="slow click"></a>
+    <div class="toggle"></div>
+  </div>
+  <div class="container">
+    <a href="#" class="slow click"></a>
+    <div class="toggle"></div>
+  </div>
+  <div class="container">
+    <a href="#" class="slow click"></a>
     <div class="toggle"></div>
   </div>
 
@@ -59,15 +120,6 @@
   <!-- Require.js -->
   <script type="text/javascript" data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
 
-  <!-- Analytics -->
-  <script>
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    e.src='//www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','UA-XXXXX-X');ga('send','pageview');
-  </script>
   <!-- End Scripts -->
 </body>
 </html>
